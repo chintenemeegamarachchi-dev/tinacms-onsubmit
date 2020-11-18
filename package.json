@@ -15,6 +15,8 @@
   },
   "dependencies": {
     "gatsby": "^2.26.1",
+    "gatsby-plugin-tinacms": "^0.33.0",
+    "gatsby-tinacms-remark": "^0.33.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
