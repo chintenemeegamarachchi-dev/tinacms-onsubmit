@@ -18,7 +18,8 @@
     "gatsby-plugin-tinacms": "^0.33.0",
     "gatsby-tinacms-remark": "^0.33.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "prettier": "2.1.2"

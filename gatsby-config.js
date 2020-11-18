@@ -1,10 +1,13 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
+const tinaCmsConfig = {
+  resolve: 'gatsby-plugin-tinacms',
+  options: {
+    // The CMS will be disabled on your production site
+    enabled: true,
+    sidebar: true,
+    plugins: ["gatsby-tinacms-remark"],
+  },
+}
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  plugins: [tinaCmsConfig],
 }
