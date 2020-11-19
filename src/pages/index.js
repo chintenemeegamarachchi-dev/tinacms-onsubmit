@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react"
 
-import { useForm, usePlugin, withPlugin  } from 'tinacms'
+import { useForm, usePlugin  } from 'tinacms'
 
 const Home = () => {
 
@@ -36,7 +36,7 @@ const Home = () => {
     ]
   }
 
-  const [modifiedValues, form] = useForm(formConfig)
+  const [modifiedValues, form] = useForm(formConfig, { values: {name}, fields: formConfig.fields })
 
   usePlugin(form)
   
@@ -62,4 +62,4 @@ const Home = () => {
   )
 }
 
-export default withPlugin(Home)
+export default Home
