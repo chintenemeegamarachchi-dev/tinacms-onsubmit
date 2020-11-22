@@ -11,8 +11,8 @@ const Home = () => {
   
   const [name, setName] = useState('Jon')
       
-  const onSubmitImplementation = () => {
-    alert(`Submitting ${name}`)
+  const onSubmitImplementation = (nameToEcho) => {
+    alert(`Submitting ${nameToEcho}`)
   }
   
   const formConfig = {
@@ -20,7 +20,7 @@ const Home = () => {
     label: 'demo',
     initialValues: pageData,
     onSubmit: (values) => {
-        onSubmitImplementation()
+        onSubmitImplementation(name)
     },
     fields: [                    
       {
@@ -56,7 +56,7 @@ const Home = () => {
         <div>{name}</div>
         
         <br/>
-        <button onClick={onSubmitImplementation}>Say my name</button>
+        <button onClick={() => onSubmitImplementation(name)}>Say my name</button>
         
       </>
   )
